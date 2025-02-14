@@ -16,7 +16,7 @@ npx create-next-app@latest -e with-supabase ejemplo
 git checkout -b develop
 ```
 
-### 6. Corro proyecto:
+### 6. Corro proyecto y lo veo en localhost:3000
 
 ```
 npm run dev
