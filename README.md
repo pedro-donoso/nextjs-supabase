@@ -33,7 +33,15 @@ NEXT_PUBLIC_SUPABASE_URL=your-project-url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
 ```
 
+### 9. Detengo el servidor y lo vuelvo a correr:
 
+```
+ctrl + c
+```
+
+```
+npm run dev
+```
 
 
 
