@@ -84,7 +84,8 @@ export default function TaskPage() {
         <button
           type="submit"
           disabled={loading}
-          className="mt-2 w-full p-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 disabled:opacity-50"
+          style={{ backgroundColor: "#1E3A8A", color: "#FBBF24" }} // Colores en hexadecimal
+          className="mt-2 w-full p-2 rounded-md"
         >
           {loading ? "Agregando..." : "Agregar Tarea"}
         </button>

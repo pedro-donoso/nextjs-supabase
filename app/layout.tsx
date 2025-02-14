@@ -1,4 +1,3 @@
-import DeployButton from "@/components/deploy-button";
 import { EnvVarWarning } from "@/components/env-var-warning";
 import HeaderAuth from "@/components/header-auth";
 import { ThemeSwitcher } from "@/components/theme-switcher";
@@ -38,14 +37,12 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <main className="min-h-screen flex flex-col items-center">
-            <div className="flex-1 w-full flex flex-col gap-20 items-center">
-              <nav className="w-full flex justify-center border-b border-b-foreground/10 h-16">
-                <div className="w-full max-w-5xl flex justify-between items-center p-3 px-5 text-sm">
-                  <div className="flex gap-5 items-center font-semibold">
-                    <Link href={"/"}>Next.js Supabase Starter</Link>
-                    <div className="flex items-center gap-2">
-                      <DeployButton />
-                    </div>
+            <div className="flex-1 w-full flex flex-col gap-2 items-center">
+              <nav className="w-full flex justify-center border-b border-b-foreground/30 h-12">
+                <div className="w-full max-w-4xl flex justify-between items-center p-3 px-2 text-sm">
+                  <div className="flex gap-80 items-center font-semibold">
+                    <Link href={"/"}>Logo</Link>
+                    <div className="flex items-center gap-2"></div>
                   </div>
 
                   <div className="flex gap-5 items-center">
