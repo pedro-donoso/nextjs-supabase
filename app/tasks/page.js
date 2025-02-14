@@ -45,6 +45,37 @@ export default function TaskPage() {
     }
   };
 
+  // Función para borrar una tarea
+
+  const deleteTask = async (id) => {
+
+    setLoading(true);
+
+    setError(null);
+
+
+    try {
+
+      const { error } = await supabase.from('tasks').delete().eq('id', id);
+
+      if (error) throw error;
+
+      alert('Tarea eliminada con éxito!');
+
+      fetchTasks(); // Vuelve a obtener la lista de tareas después de eliminar
+
+    } catch (error) {
+
+      setError('Error al eliminar la tarea: ' + error.message);
+
+    } finally {
+
+      setLoading(false);
+
+    }
+
+  };
+
   return (
     <div>
       <h1>Agregar Nueva Tarea</h1>
@@ -63,15 +94,37 @@ export default function TaskPage() {
       {error && <p style={{ color: 'red' }}>{error}</p>}
 
       <h2>Tareas Existentes</h2>
+
       <ul>
+
         {tasks.length > 0 ? (
+
           tasks.map((t) => (
-            <li key={t.id}>{t.task}</li> // Asegúrate de que 'task' sea el nombre correcto de la columna
+
+            <li key={t.id}>
+
+              {t.task} {/* Asegúrate de que 'task' sea el nombre correcto de la columna */}
+
+              <button onClick={() => deleteTask(t.id)} style={{ marginLeft: '10px' }}>
+
+                Eliminar
+
+              </button>
+
+            </li>
+
           ))
+
         ) : (
+
           <p>No hay tareas disponibles.</p>
+
         )}
+
       </ul>
+
     </div>
+
   );
+
 }
