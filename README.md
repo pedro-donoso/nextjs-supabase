@@ -43,6 +43,13 @@ ctrl + c
 npm run dev
 ```
 
+### 10. Presiono boton sign up o me dirigjo a ruta:
+
+```
+http://localhost:3000/sign-up
+````
+
+
 
 
 
