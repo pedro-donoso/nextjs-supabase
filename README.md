@@ -21,3 +21,20 @@ git checkout -b develop
 ```
 npm run dev
 ```
+
+### 7. Creo proyecto supabase y agrego contraseña BD 
+
+- Obtengo URL y Anon Public
+
+### 8. Cambio nombre a archivo .env y las agrego:
+
+```
+NEXT_PUBLIC_SUPABASE_URL=your-project-url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
+```
+
+
+
+
+
+
