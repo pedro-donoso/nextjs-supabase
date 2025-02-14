@@ -10,8 +10,14 @@ npx create-next-app@latest -e with-supabase ejemplo
 
 ### 4. Creo repositorio github, commit y push
 
-### 5. Creo rama develop
+### 5. Creo rama develop:
 
 ```
 git checkout -b develop
+```
+
+### 6. Corro proyecto:
+
+```
+npm run dev
 ```
