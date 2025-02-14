@@ -93,8 +93,13 @@ git merge develop --no-edit
 git push origin main
 ```
 
+### 20. Hago despliegue local:
 
+```
+npm run build
+```
 
+- Se crea carpeta .next
 
 
 
