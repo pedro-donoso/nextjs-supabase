@@ -26,7 +26,7 @@ npm run dev
 
 - Obtengo URL y Anon Public
 
-### 8. Cambio nombre a archivo .env y las agrego:
+### 8. Cambio nombre a archivo .env.local y las agrego:
 
 ```
 NEXT_PUBLIC_SUPABASE_URL=your-project-url
