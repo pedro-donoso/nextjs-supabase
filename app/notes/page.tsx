@@ -1,11 +1,7 @@
-// app/notes/page.js
 'use client'
 
 import { createBrowserClient } from "@supabase/ssr";
 import { useEffect, useState } from 'react';
-
-// Si ya tienes el cliente creado en otro archivo, puedes importarlo
-// import { createClient } from '@/utils/supabase/client';
 
 const supabase = createBrowserClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,

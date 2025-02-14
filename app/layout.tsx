@@ -47,6 +47,12 @@ export default function RootLayout({
                       <DeployButton />
                     </div>
                   </div>
+
+                  <div className="flex gap-5 items-center">
+                    <Link href="/send-data">Enviar Datos</Link>
+                    <Link href="/tasks">Tareas</Link>
+                  </div>
+
                   {!hasEnvVars ? <EnvVarWarning /> : <HeaderAuth />}
                 </div>
               </nav>
