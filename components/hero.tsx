@@ -10,11 +10,19 @@ export default function Header() {
           target="_blank"
           rel="noreferrer"
         >
-          <SupabaseLogo />
+          <img
+            src="https://observatorio.tec.mx/wp-content/uploads/2022/05/votodemocracia.jpeg" // Reemplaza con la URL del logotipo de Supabase
+            alt="Supabase Logo"
+            className="h-40" // Ajusta la altura según sea necesario
+          />
         </a>
         <span className="border-l rotate-45 h-6" />
         <a href="https://nextjs.org/" target="_blank" rel="noreferrer">
-          <NextLogo />
+          <img
+            src="https://institutoeducaccion.org/wp-content/uploads/2023/02/IMG_7007-1.jpg" // Reemplaza con la URL del logotipo de Next.js
+            alt="Next.js Logo"
+            className="h-40" // Ajusta la altura según sea necesario
+          />
         </a>
       </div>
       <h1 className="sr-only">Supabase and Next.js Starter Template</h1>
