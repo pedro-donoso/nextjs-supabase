@@ -49,7 +49,6 @@ export default function RootLayout({
                   </div>
 
                   <div className="flex gap-5 items-center">
-                    <Link href="/send-data">Enviar Datos</Link>
                     <Link href="/tasks">Tareas</Link>
                   </div>
 
