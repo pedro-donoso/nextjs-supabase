@@ -101,7 +101,18 @@ npm run build
 
 - Se crea carpeta .next
 
+### 21. Despliegue en vercel:
 
+- Conecto proyecto github
+- Asigno nombre al proyecto
+- boton Deploy
+
+### 22. Una vez deployado edito proyecto y agrego variables de entorno
+
+- Cargo archivo .env.local
+- Redeploy
+
+  
 
 
 
