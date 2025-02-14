@@ -26,7 +26,7 @@ npm run dev
 
 - Obtengo URL y Anon Public
 
-### 8. Cambio nombre a archivo .env y las agrego:
+### 8. Cambio nombre a archivo .env.local y las agrego:
 
 ```
 NEXT_PUBLIC_SUPABASE_URL=your-project-url
@@ -48,6 +48,74 @@ npm run dev
 ```
 http://localhost:3000/sign-up
 ````
+
+### 11. Ingreso correo, creo una contraseña y clic en boton sign up
+
+- Me aparece mensaje que se envió link al correo
+
+### 12. Reviso bandeja de entrada y confirmo link
+
+- El servidor local debe estar corriendo
+
+### 13. Me aparece saludo a correo y ruta protected
+
+### 14. Dentro del proyecto en Supabase voy a Autenthication
+
+- Aparece el usuario registrado
+
+### 15. Configuro para deploy (desde develop)
+
+```
+git fetch origin
+```
+
+### 16. Cambio de rama
+
+```
+git checkout main
+```
+
+### 17. Actualizo remoto
+
+```
+git pull origin main
+```
+
+### 18. Merge develop --> main
+
+```
+git merge develop --no-edit
+```
+
+### 19. Subo cambios
+
+```
+git push origin main
+```
+
+### 20. Hago despliegue local:
+
+```
+npm run build
+```
+
+- Se crea carpeta .next
+
+### 21. Despliegue en vercel:
+
+- Conecto proyecto github
+- Asigno nombre al proyecto
+- boton Deploy
+
+### 22. Una vez deployado edito proyecto y agrego variables de entorno
+
+- Cargo archivo .env.local
+- Redeploy
+
+  
+
+
+
 
 
 
