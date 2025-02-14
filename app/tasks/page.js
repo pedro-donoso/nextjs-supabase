@@ -1,7 +1,10 @@
+// src/app/tasks/page.js
 "use client";
 
 import { createClient } from "@/utils/supabase/client";
 import { useEffect, useState } from "react";
+import TaskForm from "@/components/TaskForm"; // Asegúrate de que la ruta sea correcta
+import TaskList from "@/components/TaskList"; // Asegúrate de que la ruta sea correcta
 
 const supabase = createClient();
 
@@ -94,25 +97,12 @@ export default function TaskPage() {
       </h1>
 
       {session ? (
-        <form onSubmit={addTask} className="mb-4">
-          <input
-            type="text"
-            value={task}
-            onChange={(e) => setTask(e.target.value)}
-            placeholder="Escribe tu tarea"
-            required
-            className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
-          />
-
-          <button
-            type="submit"
-            disabled={loading}
-            style={{ backgroundColor: "#1E3A8A", color: "#FBBF24" }} // Colores en hexadecimal
-            className="mt-4 w-full p-3 rounded-md text-white font-semibold hover:bg-blue-800 transition duration-200"
-          >
-            {loading ? "Agregando..." : "Agregar Tarea"}
-          </button>
-        </form>
+        <TaskForm
+          task={task}
+          setTask={setTask}
+          addTask={addTask}
+          loading={loading}
+        />
       ) : (
         <p className="text-red-500 text-center">
           Inicia sesión para agregar tareas.
@@ -126,28 +116,7 @@ export default function TaskPage() {
       </h2>
 
       {session ? (
-        <ul className="space-y-2">
-          {tasks.length > 0 ? (
-            tasks.map((t) => (
-              <li
-                key={t.id}
-                className="flex justify-between items-center p-3 border border-gray-200 rounded-md hover:shadow-md transition duration-200"
-              >
-                <span className="text-gray-800">{t.task}</span>
-                <button
-                  onClick={() => deleteTask(t.id)}
-                  className="text-red-500 hover:text-red-700 transition duration-200"
-                >
-                  Eliminar
-                </button>
-              </li>
-            ))
-          ) : (
-            <p className="text-center text-gray-500">
-              No hay tareas disponibles.
-            </p>
-          )}
-        </ul>
+        <TaskList tasks={tasks} deleteTask={deleteTask} />
       ) : (
         <p className="text-red-500 text-center">
           Inicia sesión para ver tus tareas.
