@@ -49,6 +49,58 @@ npm run dev
 http://localhost:3000/sign-up
 ````
 
+### 11. Ingreso correo, creo una contraseña y clic en boton sign up
+
+- Me aparece mensaje que se envió link al correo
+
+### 12. Reviso bandeja de entrada y confirmo link
+
+- El servidor local debe estar corriendo
+
+### 13. Me aparece saludo a correo y ruta protected
+
+### 14. Dentro del proyecto en Supabase voy a Autenthication
+
+- Aparece el usuario registrado
+
+### 15. Configuro para deploy (desde develop)
+
+```
+git fetch origin
+```
+
+### 16. Cambio de rama
+
+```
+git checkout main
+```
+
+### 17. Actualizo remoto
+
+```
+git pull origin main
+```
+
+### 18. Merge develop --> main
+
+```
+git merge develop --no-edit
+```
+
+### 19. Subo cambios
+
+```
+git push origin main
+```
+
+
+
+
+
+
+
+
+
 
 
 
